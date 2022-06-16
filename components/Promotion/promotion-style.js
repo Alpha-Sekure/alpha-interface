@@ -128,7 +128,7 @@ const promotionStyles = makeStyles(theme => ({
         verticalAlign: 'middle',
         width: 350,
         height: 393,
-        opacity: 1
+        opacity: 1,
       }
     },
     '& $paper': {

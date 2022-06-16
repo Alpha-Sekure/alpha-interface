@@ -16,7 +16,7 @@ import { withTranslation } from '~/i18n';
 // import MarketPrice from './MarketPrice';
 // import MobileMenu from './MobileMenu';
 import routeLink from '~/public/text/link';
-import logo from '~/public/images/Alpha_Animated_Logo.gif';
+import logo from '~/public/images/Logo_normal.png';
 import useStyles from './header-style';
 import navMenu from './menu';
 

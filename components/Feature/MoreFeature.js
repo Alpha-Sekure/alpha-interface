@@ -136,7 +136,7 @@ function MoreFeature(props) {
                 <span className="ion-ios-lock-outline" />
                 <Title text={t('common:crypto-landing.morefeature_title4')} align={isMobile ? 'center' : 'left'} />
                 <Typography className={text.subtitle2} display="block" align={isMobile ? 'center' : 'left'}>
-                  {t('common:crypto-landing.morefeature_subtitle4')}
+                  {t('common:crypto-landing.morefeature_subtitle')}
                 </Typography>
               </div>
             </Grid>
@@ -172,40 +172,6 @@ function MoreFeature(props) {
                   duration={1}
                   afterAnimatedIn={handlePlay}
                 >
-                  <ul className={classes.progressWrap}>
-                    {coinData.map((item, index) => (
-                      <li key={index.toString()}>
-                        <div className={classes.coin}>
-                          <Avatar className={classes.logo} src={item.logo} alt={item.name} />
-                          <Typography variant="h5">
-                            {item.name}
-                          </Typography>
-                        </div>
-                        <div className={classes.progress}>
-                          <div className={classes.unit}>
-                            <Typography variant="h6">
-                              <span>USD</span>
-                              &nbsp;5.000
-                            </Typography>
-                            <Typography variant="h6">
-                              <span>USD</span>
-                              &nbsp;15.000
-                            </Typography>
-                          </div>
-                          <ThemeProvider theme={themeProgress(item.color)}>
-                            <LinearProgress
-                              variant="determinate"
-                              value={play ? item.progress : 0}
-                              classes={{
-                                root: classes.track,
-                                bar: classes.bar
-                              }}
-                            />
-                          </ThemeProvider>
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
                 </ScrollAnimation>
               </Container>
             </Grid>

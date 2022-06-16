@@ -17,6 +17,12 @@ import PageNav from '../components/PageNav';
 import Notification from '../components/Notification';
 import brand from '../public/text/brand';
 
+// import FluidAnimation from 'react-fluid-animation'
+
+// const DynamicAnimation = import('@usertive/react-fluid-animation');
+import ReactFluidAnimation from '@usertive/react-fluid-animation';
+
+
 const sectionMargin = margin => (margin * 20);
 const useStyles = makeStyles(theme => ({
   mainWrap: {
@@ -52,12 +58,41 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function Landing(props) {
+
   const classes = useStyles();
   const theme = useTheme();
   const isTablet = useMediaQuery(theme.breakpoints.only('md'));
   const { onToggleDark, onToggleDir } = props;
   return (
     <React.Fragment>
+      <ReactFluidAnimation
+        style={{ 
+          height: '100vh', 
+          position: 'absolute',
+          top: '0',
+          left: '0',
+          right: '0',
+          bottom: '0',
+          width: '100%',
+          height: '100%',
+          display: 'block',
+          zIndex: '1'
+        }}
+      />
+      {/* <FluidAnimation
+        style={{ 
+          height: '100vh', 
+          position: 'absolute',
+          top: '0',
+          left: '0',
+          right: '0',
+          bottom: '0',
+          width: '100%',
+          height: '100%',
+          display: 'block',
+          zIndex: '1'
+        }}
+      /> */}
       <Head>
         <title>
           { brand.crypto.name }

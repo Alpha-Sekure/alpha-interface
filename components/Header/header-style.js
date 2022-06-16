@@ -165,8 +165,8 @@ const headerStyles = makeStyles(theme => ({
     '& img': {
       display: 'block',
       margin: '0 auto',
-      width: 100,
-      height: 100,
+      width: 120,
+      height: 120,
       marginBottom: theme.spacing(),
       [theme.breakpoints.down('sm')]: {
         height: 48,

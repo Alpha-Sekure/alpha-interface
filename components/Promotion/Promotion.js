@@ -57,19 +57,20 @@ function Promotion() {
                 <Grid item xs={12} lg={7}>
                   <Hidden mdDown>
                     <section>
-                      <div className={classes.imgWrap}>
+                      <div  className={classes.imgWrap}>
                         <div className={classes.decoration}>
                           <svg>
                             <use xlinkHref="/images/crypto/deco-promo.svg#main" />
                           </svg>
                         </div>
                         <figure className={classes.image}>
-                          <img src={item.image} alt={item.title} />
+                          <img style={{webkitClipPath: "polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)",
+  clipPath: "polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)"}} src={item.image} alt={item.title} />
                         </figure>
                       </div>
                     </section>
                   </Hidden>
-                  <Paper className={classes.paper}>
+                  <Paper style={{ backgroundColor: "#22164d", border: "none"}} className={classes.paper}>
                     <Typography variant="h1">
                       <ButtonBase>
                         {item.title}

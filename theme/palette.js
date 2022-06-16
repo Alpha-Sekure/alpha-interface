@@ -30,9 +30,9 @@ module.exports = {
   money: {
     palette: {
       primary: {
-        light: '#C8E6C9',
-        main: '#4CAF50',
-        dark: '#2E7D32'
+        light: '#8A66C4',
+        main: '#5C339E',
+        dark: '#30145C'
       },
       secondary: {
         light: '#FFECB3',

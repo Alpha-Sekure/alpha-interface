@@ -122,7 +122,7 @@ function MainFeature(props) {
             </div>
             <div className={classes.counter}>
               <div className={classes.lower}>
-                <Paper className={classes.paper}>
+                <Paper style={{ backgroundColor: "#22164d" }} className={classes.paper}>
                   <span className="ion-ios-ionic-outline" />
                   <Typography variant="h6">
                     95%
@@ -131,7 +131,7 @@ function MainFeature(props) {
                     {t('common:crypto-landing.mainfeature_supported')}
                   </Typography>
                 </Paper>
-                <Paper className={classes.paper}>
+                <Paper style={{ backgroundColor: "#22164d" }} className={classes.paper}>
                   <span className="ion-ios-people-outline" />
                   <Typography variant="h6">
                     90%
@@ -142,7 +142,7 @@ function MainFeature(props) {
                 </Paper>
               </div>
               <div className={classes.higher}>
-                <Paper className={classes.paper}>
+                <Paper style={{ backgroundColor: "#22164d" }} className={classes.paper}>
                   <span className="ion-ios-archive-outline" />
                   <Typography variant="h6">
                     75%
@@ -151,7 +151,7 @@ function MainFeature(props) {
                     {t('common:crypto-landing.mainfeature_open')}
                   </Typography>
                 </Paper>
-                <Paper className={classes.paper}>
+                <Paper style={{ backgroundColor: "#22164d" }} className={classes.paper}>
                   <span className="ion-ios-heart-outline" />
                   <Typography variant="h6">
                     60%
@@ -162,9 +162,9 @@ function MainFeature(props) {
                 </Paper>
               </div>
             </div>
-            <p>
+            {/* <p>
               Stats taken from AssureDefi survey
-            </p>
+            </p> */}
           </Grid>
         </Grid>
       </Container>
