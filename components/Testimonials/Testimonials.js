@@ -16,41 +16,35 @@ import useStyle from './testi-style';
 
 const testiContent = [
   {
-    text: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non.',
-    name: 'John Doe',
-    avatar: imgApi.avatar[6],
-    title: 'Chief Digital Officer',
+    text: 'Victim of rug - pulls, Yusuph aims to stop fraud, combining both real-world skills, on-chain ability, being a real world racing driver himself he is the perfect driving force for the future of Alpha Sekure. He has over a decade of experience in running businesses and organisations, as well as an avid investor, providing some of the industry\'s best marketing expertise to a variety of projects.',
+    name: 'Yusuph',
+    avatar: imgApi.team[2],
+    title: 'Chief Executive Officer',
   },
   {
-    text: 'Vestibulum sit amet tortor sit amet libero lobortis semper at et odio. In eu tellus tellus. Pellentesque ullamcorper aliquet ultrices. Aenean facilisis vitae purus facilisis semper. Nam vitae scelerisque lorem, quis tempus libero.',
-    name: 'Jean Doe',
-    avatar: imgApi.avatar[7],
-    title: 'Chief Digital Officer',
+    text: 'A financial adviser in the real world, has years of experience in the crypto sector and is a well known youtuber and influencer with over 11 thousand subscribers on YouTube,   his invaluable insights and contacts within the crypto space, market expertise, and finance management abilities.  Keep Alpha on the road and climbing. ',
+    name: 'Qris Monocle',
+    avatar: imgApi.team[0],
+    title: 'Chief Operating Officer (COO)',
   },
   {
-    text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-    name: 'Jena Doe',
+    text: 'One of the biggest and most influential people in the crypto space with over 45 thousand subscribers on his channel channel and a self made millionaire businessman previously. He heads up our advisory panel at Alpha and provides some of the worlds best consultation.',
+    name: 'James Pelton',
     avatar: imgApi.avatar[1],
-    title: 'Graphic Designer',
+    title: 'Senior Advisor (SA)',
   },
   {
-    text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel.',
-    name: 'Jovelin Doe',
-    avatar: imgApi.avatar[2],
-    title: 'Senior Graphic Designer',
-  },
-  {
-    text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-    name: 'Jihan Doe',
+    text: 'A Software Developer and former National Team Sprinter, Chase aims to bring fresh ideas, youth and enthusiasm to the Alpha Sekure team. Expert in cryptocurrency tokenomics, mathematical modelling and engineering he is sure to spot ponzi scheme a mile off! With a strong level of professionalism and charismatic personality, he will provide the fuel to power Alpha Sekure\'s path.',
+    name: 'Chase Maxwell Kluck',
     avatar: imgApi.avatar[3],
-    title: 'CEO Software House',
+    title: 'Chief technical officer (CTO)',
   },
   {
-    text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-    name: 'John Doe',
-    avatar: imgApi.avatar[9],
-    title: 'Senior Graphic Designer',
-  },
+    text: 'Boasting a wide array of skills from graphic design to digital marketing and more, Jayden has multiple years experience in the space and a passion for blockchain technology. Jayden\'s primary role within Alpha Sekure is managing business partners and relations to develop professional relationships and meet company goals. ',
+    name: 'Jayden Holloway',
+    avatar: imgApi.team[2],
+    title: 'Partnership Manager (PM)',
+  }
 ];
 
 function Testimonials(props) {
@@ -89,7 +83,7 @@ function Testimonials(props) {
       <Container fixed={isDesktop}>
         <Title text={t('common:crypto-landing.testi_title')} align="center" />
         <Typography className={text.subtitle2} align="center">
-          {t('common:crypto-landing.testi_subtitle')}
+          {/* {t('common:crypto-landing.testi_subtitle')} */}
         </Typography>
         <Grid container spacing={6}>
           <Grid item md={1} xs={12} />

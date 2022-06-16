@@ -39,21 +39,17 @@ function Benefit(props) {
                   {t('common:crypto-landing.benefit_title')}
                 </Typography>
                 <ul className={classes.list}>
-                  <li>Vestibulum faucibus</li>
-                  <li>Vivamus sit amet interdum elit</li>
-                  <li>Donec dignissim</li>
-                  <li>Quisque lacinia purus</li>
-                  <li>Fusce placerat enim et odio molestie</li>
-                  <li>Pellentesque ac bibendum tortor</li>
-                  <li>Lorem ipsum dolor sit amet</li>
-                  <li>And more…</li>
+                  <li>Working with local authorities in the perpetrators country </li>
+                  <li>Background checks and classified access to documents on the project</li>
+                  <li>Use of our wide range of contacts, advisors and partners in the DeFi space</li>
+                  <li>Contact us for more</li>
                 </ul>
               </div>
             </Grid>
             <Grid item md={7}>
               <div>
                 <figure className={classes.img}>
-                  <img src={imgAPI.crypto[6]} alt="benefit" />
+                  <img src={imgAPI.services[3]} alt="benefit" />
                 </figure>
               </div>
               <Hidden mdDown>

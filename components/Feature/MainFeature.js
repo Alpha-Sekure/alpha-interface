@@ -125,18 +125,18 @@ function MainFeature(props) {
                 <Paper className={classes.paper}>
                   <span className="ion-ios-ionic-outline" />
                   <Typography variant="h6">
-                    +600
+                    95%
                   </Typography>
-                  <Typography display="block">
+                  <Typography style={{fontSize: '10px'}} display="block">
                     {t('common:crypto-landing.mainfeature_supported')}
                   </Typography>
                 </Paper>
                 <Paper className={classes.paper}>
                   <span className="ion-ios-people-outline" />
                   <Typography variant="h6">
-                    +200K
+                    90%
                   </Typography>
-                  <Typography display="block">
+                  <Typography style={{fontSize: '10px'}} display="block">
                     {t('common:crypto-landing.mainfeature_registered')}
                   </Typography>
                 </Paper>
@@ -145,23 +145,24 @@ function MainFeature(props) {
                 <Paper className={classes.paper}>
                   <span className="ion-ios-archive-outline" />
                   <Typography variant="h6">
-                    +20M
+                    75%
                   </Typography>
-                  <Typography display="block">
+                  <Typography style={{fontSize: '10px'}} display="block">
                     {t('common:crypto-landing.mainfeature_open')}
                   </Typography>
                 </Paper>
                 <Paper className={classes.paper}>
                   <span className="ion-ios-heart-outline" />
                   <Typography variant="h6">
-                    +50M
+                    60%
                   </Typography>
-                  <Typography display="block">
+                  <Typography style={{fontSize: '10px'}} display="block">
                     {t('common:crypto-landing.mainfeature_invested')}
                   </Typography>
                 </Paper>
               </div>
             </div>
+            <p>Stats taken from <a href='#'>AssureDefi survey</a></p>
           </Grid>
         </Grid>
       </Container>

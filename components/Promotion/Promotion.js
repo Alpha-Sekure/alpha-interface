@@ -14,27 +14,21 @@ import { withTranslation } from '~/i18n';
 
 const sliderData = [
   {
-    image: imgAPI.crypto[0],
-    title: 'Sed imperdiet enim ligula',
-    desc: 'Sed imperdiet enim ligula vitae viverra. Vivamus sit amet interdum elit.',
+    image: imgAPI.services[0],
+    title: 'Fraud Protection',
+    desc: 'Working together with local authorities, partners, advisory panel and the experts in the team we offer missing fund location and fraud tracking services.',
     date: '12 Jul - 10 Aug'
   },
   {
-    image: imgAPI.crypto[1],
-    title: 'Fusce placerat enim et odio',
-    desc: 'Sed imperdiet enim ligula vitae viverra. Vivamus sit amet interdum elit.',
+    image: imgAPI.services[1],
+    title: 'KYC verification',
+    desc: 'The most rigorous KYC process on the planet, you will be able to show off you have undergone the best of the best, including face/id/personal document verification and more.',
     date: '12 Jul - 10 Aug'
   },
   {
-    image: imgAPI.crypto[2],
-    title: 'Pellentesque ac bibendum tortor',
-    desc: 'Sed imperdiet enim ligula vitae viverra. Vivamus sit amet interdum elit.',
-    date: '12 Jul - 10 Aug'
-  },
-  {
-    image: imgAPI.crypto[3],
-    title: 'Pellentesque ac bibendum tortor',
-    desc: 'Sed imperdiet enim ligula vitae viverra. Vivamus sit amet interdum elit.',
+    image: imgAPI.services[2],
+    title: 'Smart Contract Audits',
+    desc: 'Verification and security insurance on web 3 and web 2 smart contracts and programmes, world leading developers sieving through each code line by line.',
     date: '12 Jul - 10 Aug'
   }
 ];
@@ -84,13 +78,13 @@ function Promotion(props) {
                     <Typography component="p">
                       {item.desc}
                     </Typography>
-                    <section className={classes.time}>
+                    {/* <section className={classes.time}>
                       <Typography component="h6">
                         {t('common:crypto-landing.promo_periode')}
                         :&nbsp;
                         {item.date}
                       </Typography>
-                    </section>
+                    </section> */}
                   </Paper>
                 </Grid>
               </Grid>

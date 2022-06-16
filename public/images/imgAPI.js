@@ -37,6 +37,19 @@ const imgAPI = {
     'https://via.placeholder.com/1280x677/204473/FFFFFF',
     '/images/crypto/crypto_laptop.png'
   ],
+  services: [
+    '/images/services/Audit_Slide.png',
+    '/images/services/Fraud_Protection_Slide.png',
+    '/images/services/KYC_Slide.png',
+    '/images/services/GFX_Services_section_2.png',
+  ],
+  team: [
+    './images/team/image (1).png',
+    './images/team/image (2).png',
+    './images/team/image (3).png',
+    './images/team/image (4).png',
+    './images/team/image (5).png',
+  ]
 };
 
 export default imgAPI;

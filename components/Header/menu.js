@@ -1,8 +1,10 @@
 const menu = [
-  'promotions',
-  'feature',
-  'benefit',
-  'testimonials'
+  'discord',
+  'services',
+  'team',
+  'security',
+  'investors',
+  'faq'
 ];
 
 export default menu;

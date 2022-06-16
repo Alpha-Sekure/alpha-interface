@@ -16,7 +16,7 @@ import Settings from './Settings';
 import MarketPrice from './MarketPrice';
 import MobileMenu from './MobileMenu';
 import routeLink from '~/public/text/link';
-import logo from '~/public/images/crypto-logo.svg';
+import logo from '~/public/images/Alpha_Animated_Logo.gif';
 import useStyles from './header-style';
 import navMenu from './menu';
 
@@ -65,6 +65,8 @@ function Header(props) {
     createData(navMenu[1], '#' + navMenu[1]),
     createData(navMenu[2], '#' + navMenu[2]),
     createData(navMenu[3], '#' + navMenu[3]),
+    createData(navMenu[4], '#' + navMenu[4]),
+    createData(navMenu[5], '#' + navMenu[5]),
   ]);
   const [openDrawer, setOpenDrawer] = useState(false);
   const handleOpenDrawer = () => {
@@ -72,12 +74,12 @@ function Header(props) {
   };
   return (
     <Fragment>
-      { isMobile && (<MobileMenu open={openDrawer} toggleDrawer={handleOpenDrawer} />) }
+      {/* { isMobile && (<MobileMenu open={openDrawer} toggleDrawer={handleOpenDrawer} />) }
       {!invert && (
         <Hidden mdDown>
           <MarketPrice />
         </Hidden>
-      )}
+      )} */}
       <AppBar
         component="header"
         position="relative"
@@ -113,10 +115,12 @@ function Header(props) {
                   </AnchorLink>
                 )}
               </div>
+              <div>
+
               {isDesktop && (
                 <Scrollspy
-                  items={navMenu}
-                  currentClassName="active"
+                items={navMenu}
+                currentClassName="active"
                 >
                   {menuList.map(item => (
                     <li key={item.id.toString()}>
@@ -140,11 +144,12 @@ function Header(props) {
                   </li>
                 </Scrollspy>
               )}
+              </div>
             </nav>
             <Hidden mdDown>
               <Divider className={classes.divider} />
             </Hidden>
-            <nav className={clsx(classes.navMenu, classes.navAuth)}>
+            {/* <nav className={clsx(classes.navMenu, classes.navAuth)}>
               <Hidden xsDown>
                 <Button href={routeLink.crypto.login}>
                   {t('common:crypto-landing.header_login')}
@@ -154,7 +159,7 @@ function Header(props) {
                 </Button>
               </Hidden>
               <Settings toggleDark={onToggleDark} toggleDir={onToggleDir} invert={invert} />
-            </nav>
+            </nav> */}
           </div>
         </Container>
       </AppBar>
