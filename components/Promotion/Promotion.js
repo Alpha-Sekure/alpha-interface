@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';

@@ -163,10 +163,7 @@ function MainFeature(props) {
               </div>
             </div>
             <p>
-              Stats taken from 
-              <a href='#'>
-                AssureDefi survey
-              </a>
+              Stats taken from AssureDefi survey
             </p>
           </Grid>
         </Grid>

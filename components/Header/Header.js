@@ -118,8 +118,8 @@ function Header(props) {
               <div>
                 {isDesktop && (
                   <Scrollspy
-                  items={navMenu}
-                  currentClassName="active"
+                    items={navMenu}
+                    currentClassName="active"
                   >
                     {menuList.map(item => (
                       <li key={item.id.toString()}>
