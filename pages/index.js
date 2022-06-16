@@ -5,7 +5,7 @@ import { useTheme, makeStyles } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Hidden from '@material-ui/core/Hidden';
-import ReactFluidAnimation from '@usertive/react-fluid-animation';
+// import ReactFluidAnimation from '@usertive/react-fluid-animation';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Promotion from '../components/Promotion';
@@ -59,7 +59,8 @@ function Landing(props) {
   const { onToggleDark, onToggleDir } = props;
   return (
     <React.Fragment>
-      <ReactFluidAnimation
+      {/* isAfterHydration ?
+      <DynamicAnimation
         style={{
           position: 'absolute',
           top: '0',
@@ -72,6 +73,7 @@ function Landing(props) {
           zIndex: '1'
         }}
       />
+      : null; */}
       <Head>
         <title>
           { brand.crypto.name }
