@@ -53,7 +53,6 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function Landing(props) {
-
   const classes = useStyles();
   const theme = useTheme();
   const isTablet = useMediaQuery(theme.breakpoints.only('md'));
@@ -61,8 +60,7 @@ function Landing(props) {
   return (
     <React.Fragment>
       <ReactFluidAnimation
-        style={{ 
-          height: '100vh', 
+        style={{
           position: 'absolute',
           top: '0',
           left: '0',

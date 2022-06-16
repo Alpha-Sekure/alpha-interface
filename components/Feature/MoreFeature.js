@@ -1,68 +1,27 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { ThemeProvider, createTheme, useTheme } from '@material-ui/core/styles';
+import { useTheme } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import ScrollAnimation from 'react-scroll-animation-wrapper';
 import clsx from 'clsx';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import Avatar from '@material-ui/core/Avatar';
-import LinearProgress from '@material-ui/core/LinearProgress';
+// import Avatar from '@material-ui/core/Avatar';
+// import LinearProgress from '@material-ui/core/LinearProgress';
 import { withTranslation } from '~/i18n';
 import { useText } from '~/theme/common';
 import Title from '../Title';
 import useStyles from './feature-style';
 
-const coinData = [
-  {
-    name: 'BTC',
-    logo: '/images/crypto/btc.png',
-    progress: 75,
-    color: '#FBA630'
-  },
-  {
-    name: 'DASH',
-    logo: '/images/crypto/dash.png',
-    progress: 40,
-    color: '#21D3D7'
-  },
-  {
-    name: 'NAN',
-    logo: '/images/crypto/nan.png',
-    progress: 90,
-    color: '#548CCC'
-  },
-  {
-    name: 'MNR',
-    logo: '/images/crypto/mnr.png',
-    progress: 35,
-    color: '#FF6602'
-  },
-  {
-    name: 'IOT',
-    logo: '/images/crypto/iot.png',
-    progress: 80,
-    color: '#CE07D4'
-  }
-];
-
 function MoreFeature(props) {
   const classes = useStyles();
   const text = useText();
-  const [play, setPlay] = useState(false);
+  const [setPlay] = useState(false);
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up('md'));
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const { t } = props;
-
-  const themeProgress = color => createTheme({
-    palette: {
-      primary: {
-        main: color
-      }
-    }
-  });
 
   const handlePlay = visible => {
     if (visible.inViewport) {
@@ -171,8 +130,7 @@ function MoreFeature(props) {
                   offset={-100}
                   duration={1}
                   afterAnimatedIn={handlePlay}
-                >
-                </ScrollAnimation>
+                />
               </Container>
             </Grid>
           </Grid>
