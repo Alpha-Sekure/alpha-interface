@@ -12,9 +12,9 @@ import { useTheme } from '@material-ui/core/styles';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Scrollspy from 'react-scrollspy';
 import { withTranslation } from '~/i18n';
-import Settings from './Settings';
-import MarketPrice from './MarketPrice';
-import MobileMenu from './MobileMenu';
+// import Settings from './Settings';
+// import MarketPrice from './MarketPrice';
+// import MobileMenu from './MobileMenu';
 import routeLink from '~/public/text/link';
 import logo from '~/public/images/Alpha_Animated_Logo.gif';
 import useStyles from './header-style';
@@ -53,8 +53,8 @@ function Header(props) {
   const classes = useStyles();
   const theme = useTheme();
   const {
-    onToggleDark,
-    onToggleDir,
+    // onToggleDark,
+    // onToggleDir,
     invert,
     t
   } = props;
@@ -116,7 +116,6 @@ function Header(props) {
                 )}
               </div>
               <div>
-
               {isDesktop && (
                 <Scrollspy
                 items={navMenu}

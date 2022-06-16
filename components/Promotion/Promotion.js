@@ -35,7 +35,7 @@ const sliderData = [
 
 function Promotion(props) {
   const classes = useStyles();
-  const { t } = props;
+  // const { t } = props;
   return (
     <div className={classes.root}>
       <div className={classes.sliderWrap}>
