@@ -116,33 +116,33 @@ function Header(props) {
                 )}
               </div>
               <div>
-              {isDesktop && (
-                <Scrollspy
-                items={navMenu}
-                currentClassName="active"
-                >
-                  {menuList.map(item => (
-                    <li key={item.id.toString()}>
-                      {invert ? (
-                        // eslint-disable-next-line
-                        <Button offset={item.offset || 0} href={'/' + item.url}>
-                          {t('common:crypto-landing.header_' + item.name)}
-                        </Button>
-                      ) : (
-                        // eslint-disable-next-line
-                        <Button component={AnchorLink} offset={item.offset || 0} href={item.url}>
-                          {t('common:crypto-landing.header_' + item.name)}
-                        </Button>
-                      )}
+                {isDesktop && (
+                  <Scrollspy
+                  items={navMenu}
+                  currentClassName="active"
+                  >
+                    {menuList.map(item => (
+                      <li key={item.id.toString()}>
+                        {invert ? (
+                          // eslint-disable-next-line
+                          <Button offset={item.offset || 0} href={'/' + item.url}>
+                            {t('common:crypto-landing.header_' + item.name)}
+                          </Button>
+                        ) : (
+                          // eslint-disable-next-line
+                          <Button component={AnchorLink} offset={item.offset || 0} href={item.url}>
+                            {t('common:crypto-landing.header_' + item.name)}
+                          </Button>
+                        )}
+                      </li>
+                    ))}
+                    <li>
+                      <Button href={routeLink.crypto.contact}>
+                        {t('common:crypto-landing.header_contact')}
+                      </Button>
                     </li>
-                  ))}
-                  <li>
-                    <Button href={routeLink.crypto.contact}>
-                      {t('common:crypto-landing.header_contact')}
-                    </Button>
-                  </li>
-                </Scrollspy>
-              )}
+                  </Scrollspy>
+                )}
               </div>
             </nav>
             <Hidden mdDown>
@@ -167,8 +167,8 @@ function Header(props) {
 }
 
 Header.propTypes = {
-  onToggleDark: PropTypes.func.isRequired,
-  onToggleDir: PropTypes.func.isRequired,
+  // onToggleDark: PropTypes.func.isRequired,
+  // onToggleDir: PropTypes.func.isRequired,
   invert: PropTypes.bool,
   t: PropTypes.func.isRequired
 };

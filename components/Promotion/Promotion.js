@@ -33,7 +33,7 @@ const sliderData = [
   }
 ];
 
-function Promotion(props) {
+function Promotion() {
   const classes = useStyles();
   // const { t } = props;
   return (
@@ -97,7 +97,7 @@ function Promotion(props) {
 }
 
 Promotion.propTypes = {
-  t: PropTypes.func.isRequired
+  // t: PropTypes.func.isRequired
 };
 
 export default withTranslation(['crypto-landing'])(Promotion);

@@ -127,7 +127,7 @@ function MainFeature(props) {
                   <Typography variant="h6">
                     95%
                   </Typography>
-                  <Typography style={ { fontSize: '10px' } } display="block">
+                  <Typography style={{ fontSize: '10px' }} display="block">
                     {t('common:crypto-landing.mainfeature_supported')}
                   </Typography>
                 </Paper>
@@ -136,7 +136,7 @@ function MainFeature(props) {
                   <Typography variant="h6">
                     90%
                   </Typography>
-                  <Typography style={ { fontSize: '10px' } } display="block">
+                  <Typography style={{ fontSize: '10px' }} display="block">
                     {t('common:crypto-landing.mainfeature_registered')}
                   </Typography>
                 </Paper>
@@ -147,7 +147,7 @@ function MainFeature(props) {
                   <Typography variant="h6">
                     75%
                   </Typography>
-                  <Typography style={ { fontSize: '10px' } } display="block">
+                  <Typography style={{ fontSize: '10px' }} display="block">
                     {t('common:crypto-landing.mainfeature_open')}
                   </Typography>
                 </Paper>
@@ -156,7 +156,7 @@ function MainFeature(props) {
                   <Typography variant="h6">
                     60%
                   </Typography>
-                  <Typography style={ { fontSize: '10px' } } display="block">
+                  <Typography style={{ fontSize: '10px' }} display="block">
                     {t('common:crypto-landing.mainfeature_invested')}
                   </Typography>
                 </Paper>
