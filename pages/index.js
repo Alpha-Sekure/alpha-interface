@@ -60,30 +60,8 @@ function Landing(props) {
   const isTablet = useMediaQuery(theme.breakpoints.only('md'));
   const { onToggleDark, onToggleDir } = props;
 
-  // const [isAfterHydration, setIsAfterHydration] = useState(false);
-  
-  // useEffect(() => {
-  //   if (!isAfterHydration) setIsAfterHydration(true);
-  // }, [isAfterHydration, setIsAfterHydration]);
-
   return (
     <React.Fragment>
-      {/* isAfterHydration ?
-      <DynamicAnimation
-        style={{
-          position: 'absolute',
-          top: '0',
-          left: '0',
-          right: '0',
-          bottom: '0',
-          width: '100%',
-          height: '100%',
-          display: 'block',
-          zIndex: '1'
-        }}
-      />
-      : null; */}
-      {/* <ReactFluidAnimation/> */}
       <Head>
         <title>
           { brand.crypto.name }

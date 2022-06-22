@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { useTheme } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
@@ -17,17 +17,10 @@ import useStyles from './feature-style';
 function MoreFeature(props) {
   const classes = useStyles();
   const text = useText();
-  // const [setPlay] = useState(false);
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up('md'));
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const { t } = props;
-
-  // const handlePlay = visible => {
-  //   if (visible.inViewport) {
-  //     setTimeout(() => { setPlay(true); }, 500);
-  //   }
-  // };
 
   return (
     <div className={classes.moreFeature}>
