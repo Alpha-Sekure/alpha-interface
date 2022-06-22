@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
+// import dynamic from 'next/dynamic';
 import { useTheme, makeStyles } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -17,6 +18,7 @@ import FooterWithCounter from '../components/Footer/FooterWithCounter';
 import PageNav from '../components/PageNav';
 import Notification from '../components/Notification';
 import brand from '../public/text/brand';
+// const DynamicAnimation = dynamic(() => import('@usertive/react-fluid-animation'));
 
 const sectionMargin = margin => (margin * 20);
 const useStyles = makeStyles(theme => ({
@@ -57,6 +59,13 @@ function Landing(props) {
   const theme = useTheme();
   const isTablet = useMediaQuery(theme.breakpoints.only('md'));
   const { onToggleDark, onToggleDir } = props;
+
+  // const [isAfterHydration, setIsAfterHydration] = useState(false);
+  
+  // useEffect(() => {
+  //   if (!isAfterHydration) setIsAfterHydration(true);
+  // }, [isAfterHydration, setIsAfterHydration]);
+
   return (
     <React.Fragment>
       {/* isAfterHydration ?
@@ -74,6 +83,7 @@ function Landing(props) {
         }}
       />
       : null; */}
+      {/* <ReactFluidAnimation/> */}
       <Head>
         <title>
           { brand.crypto.name }

@@ -17,17 +17,17 @@ import useStyles from './feature-style';
 function MoreFeature(props) {
   const classes = useStyles();
   const text = useText();
-  const [setPlay] = useState(false);
+  // const [setPlay] = useState(false);
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up('md'));
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const { t } = props;
 
-  const handlePlay = visible => {
-    if (visible.inViewport) {
-      setTimeout(() => { setPlay(true); }, 500);
-    }
-  };
+  // const handlePlay = visible => {
+  //   if (visible.inViewport) {
+  //     setTimeout(() => { setPlay(true); }, 500);
+  //   }
+  // };
 
   return (
     <div className={classes.moreFeature}>
@@ -129,7 +129,7 @@ function MoreFeature(props) {
                   animateIn="fadeIn"
                   offset={-100}
                   duration={1}
-                  afterAnimatedIn={handlePlay}
+                  // afterAnimatedIn={handlePlay}
                 />
               </Container>
             </Grid>
