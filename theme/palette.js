@@ -1,42 +1,42 @@
 module.exports = {
-  oceanBlue: {
-    palette: {
-      primary: {
-        light: '#BBDEFB',
-        main: '#2196F3',
-        dark: '#0D47A1'
-      },
-      secondary: {
-        light: '#B2EBF2',
-        main: '#00BCD4',
-        dark: '#006064'
-      }
-    }
-  },
-  greenLeaf: {
-    palette: {
-      primary: {
-        light: '#C8E6C9',
-        main: '#4CAF50',
-        dark: '#1B5E20'
-      },
-      secondary: {
-        light: '#CFD8DC',
-        main: '#607D8B',
-        dark: '#37474F'
-      }
-    }
-  },
+  // oceanBlue: {
+  //   palette: {
+  //     primary: {
+  //       light: '#BBDEFB',
+  //       main: '#2196F3',
+  //       dark: '#0D47A1'
+  //     },
+  //     secondary: {
+  //       light: '#B2EBF2',
+  //       main: '#00BCD4',
+  //       dark: '#006064'
+  //     }
+  //   }
+  // },
+  // greenLeaf: {
+  //   palette: {
+  //     primary: {
+  //       light: '#C8E6C9',
+  //       main: '#4CAF50',
+  //       dark: '#1B5E20'
+  //     },
+  //     secondary: {
+  //       light: '#CFD8DC',
+  //       main: '#607D8B',
+  //       dark: '#37474F'
+  //     }
+  //   }
+  // },
   money: {
     palette: {
       primary: {
-        light: '#8A66C4',
-        main: '#5C339E',
-        dark: '#30145C'
+        light: '#2c1e42',
+        main: '#150929',
+        dark: '#0f051f'
       },
       secondary: {
-        light: '#FFECB3',
-        main: '#FFA000',
+        light: '#f5c945',
+        main: '#5c3b05',
         dark: '#FF6F00'
       }
     }
