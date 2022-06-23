@@ -6,7 +6,7 @@ module.exports = {
     footerText: 'AlphaSekure',
     logoText: 'AlphaSekure',
     projectName: '',
-    url: 'alphasekure.ux-maestro.com/coinz',
+    url: 'alphasekure.app',
     img: '/static/images/crypto-logo.png',
     notifMsg: 'Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula.'
   }

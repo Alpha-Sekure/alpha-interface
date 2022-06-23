@@ -27,9 +27,9 @@ import '../vendors/page-transition.css';
 import '../vendors/slick/slick.css';
 import '../vendors/slick/slick-theme.css';
 
-let themeType = 'light';
+let themeType = 'dark';
 if (typeof Storage !== 'undefined') { // eslint-disable-line
-  themeType = localStorage.getItem('luxiTheme') || 'light';
+  themeType = localStorage.getItem('luxiTheme') || 'dark';
 }
 
 function MyApp(props) {
