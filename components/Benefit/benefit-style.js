@@ -42,7 +42,7 @@ const benefitStyles = makeStyles(theme => ({
     }
   },
   img: {
-    margin: theme.spacing(3, 0, 0, 0),
+    margin: theme.spacing(3, 0, 5, 0),
     overflow: 'hidden',
     bottom: -40,
     position: 'relative',

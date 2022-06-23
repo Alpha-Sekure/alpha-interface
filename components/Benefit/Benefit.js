@@ -22,13 +22,13 @@ function Benefit(props) {
   return (
     <div className={classes.root}>
       <div className={classes.parallaxWrap}>
-        <Parallax
+        {/* <Parallax
           bgImage={imgAPI.crypto[5]}
           bgImageAlt="benefit"
           strength={0}
         >
           <div className={classes.parallaxProps} />
-        </Parallax>
+        </Parallax> */}
       </div>
       <Container fixed={isDesktop}>
         <div className={classes.wrapper}>
