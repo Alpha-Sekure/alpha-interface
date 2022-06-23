@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useTheme } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
+import { Parallax } from 'react-parallax';
 import imgAPI from '~/public/images/imgAPI';
 import { withTranslation } from '~/i18n';
 import { useText } from '~/theme/common';
@@ -21,13 +22,13 @@ function Benefit(props) {
   return (
     <div className={classes.root}>
       <div className={classes.parallaxWrap}>
-        {/* <Parallax
+        <Parallax
           bgImage={imgAPI.crypto[5]}
           bgImageAlt="benefit"
           strength={0}
         >
           <div className={classes.parallaxProps} />
-        </Parallax> */}
+        </Parallax>
       </div>
       <Container fixed={isDesktop}>
         <div className={classes.wrapper}>
