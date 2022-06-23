@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+// import dynamic from 'next/dynamic';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import Container from '@material-ui/core/Container';
@@ -10,6 +11,8 @@ import Typography from '@material-ui/core/Typography';
 import { useText } from '~/theme/common';
 import { withTranslation } from '~/i18n';
 import useStyles from './banner-style';
+
+// const DynamicAnimation = dynamic(() => import('@usertive/react-fluid-animation'));
 
 function Banner(props) {
   const classes = useStyles();
@@ -44,7 +47,7 @@ function Banner(props) {
           value: 80,
           density: {
             enable: true,
-            value_area: 800
+            value_area: 450
           }
         },
         color: {
@@ -62,7 +65,7 @@ function Banner(props) {
         },
         opacity: {
           value: 0.5,
-          random: false,
+          random: true,
           anim: {
             enable: false,
             speed: 1,
@@ -74,9 +77,9 @@ function Banner(props) {
           value: 3,
           random: true,
           anim: {
-            enable: false,
-            speed: 40,
-            size_min: 0.1,
+            enable: true,
+            speed: 90,
+            size_min: 0.9,
             sync: false
           }
         },
@@ -89,12 +92,12 @@ function Banner(props) {
         },
         move: {
           enable: true,
-          speed: 2,
+          speed: 4,
           direction: 'none',
           random: false,
           straight: false,
           out_mode: 'out',
-          bounce: false,
+          bounce: true,
           attract: {
             enable: false,
             rotateX: 600,
@@ -107,7 +110,7 @@ function Banner(props) {
         events: {
           onhover: {
             enable: true,
-            mode: 'repulse'
+            mode: 'grab'
           },
           onclick: {
             enable: true,
