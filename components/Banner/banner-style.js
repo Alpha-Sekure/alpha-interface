@@ -2,7 +2,7 @@ import {
   makeStyles,
   alpha,
   lighten,
-  darken
+  // darken
 } from '@material-ui/core/styles';
 
 const bannerStyles = makeStyles(theme => ({
@@ -28,7 +28,7 @@ const bannerStyles = makeStyles(theme => ({
       left: 0,
       width: '100%',
       height: '100%',
-      background: 'rgba(0, 0, 0, 0.2)'
+      background: 'rgba(0, 0, 0, 0.2)' // for paint
     }
   },
   overlay: {
@@ -111,7 +111,7 @@ const bannerStyles = makeStyles(theme => ({
     '& svg': {
       width: 1400,
       height: 380,
-      fill: theme.palette.type === 'dark' ? darken(theme.palette.primary.dark, 0.6) : lighten(theme.palette.primary.main, 0.84),
+      fill: theme.palette.type === 'dark' ? 'black' : lighten(theme.palette.primary.main, 0.84),
       [theme.breakpoints.up(1200)]: {
         transform: 'scale(2, 1)'
       },

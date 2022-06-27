@@ -74,7 +74,7 @@ const faqStyles = makeStyles(theme => ({
     }
   },
   detail: {
-    background: theme.palette.background.paper,
+    background: 'black',
     paddingTop: theme.spacing(3),
     '& p': {
       [theme.breakpoints.up('sm')]: {
