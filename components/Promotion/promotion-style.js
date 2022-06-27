@@ -1,12 +1,13 @@
 import { makeStyles } from '@material-ui/core/styles';
-import { lighten, darken } from '@material-ui/core/styles/colorManipulator';
-import decoBottomLight from '~/public/images/crypto/deco-bottom-light.svg';
-import decoBottomDark from '~/public/images/crypto/deco-bottom-dark.svg';
+// import { lighten, darken } from '@material-ui/core/styles/colorManipulator';
+// import decoBottomLight from '~/public/images/crypto/deco-bottom-light.svg';
+// import decoBottomDark from '~/public/images/crypto/deco-bottom-dark.svg';
 
 const promotionStyles = makeStyles(theme => ({
   root: {
-    background: `url(${theme.palette.type === 'dark' ? decoBottomDark : decoBottomLight}) bottom center no-repeat`,
-    backgroundColor: theme.palette.type === 'dark' ? darken(theme.palette.primary.dark, 0.5) : lighten(theme.palette.primary.main, 0.84),
+    // background: `url(${theme.palette.type === 'dark' ? decoBottomDark : decoBottomLight}) bottom center no-repeat`,
+    background: 'black',
+    // backgroundColor: theme.palette.type === 'dark' ? darken(theme.palette.primary.dark, 0.5) : lighten(theme.palette.primary.main, 0.84),
     backgroundSize: '100%',
     position: 'relative',
     backgroundPosition: 'center 101%',
