@@ -11,7 +11,7 @@ import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Promotion from '../components/Promotion';
 import Feature from '../components/Feature';
-import Benefit from '../components/Benefit';
+// import Benefit from '../components/Benefit';
 import Testimonials from '../components/Testimonials';
 import Faq from '../components/Faq';
 import FooterWithCounter from '../components/Footer/FooterWithCounter';
@@ -86,9 +86,9 @@ function Landing(props) {
           <section id="feature" className={isTablet ? classes.spaceTopShort : ''}>
             <Feature />
           </section>
-          <section id="benefit" className={classes.spaceTopShort}>
+          {/* <section id="benefit" className={classes.spaceTopShort}>
             <Benefit />
-          </section>
+          </section> */}
           <section id="testimonials" className={classes.spaceTop}>
             <Testimonials />
           </section>

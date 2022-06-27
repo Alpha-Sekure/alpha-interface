@@ -107,24 +107,58 @@ function MoreFeature(props) {
           </Grid>
         </div>
         <div className={classes.item}>
-          <Grid container>
-            <Grid item sm={12}>
-              <div className={clsx(classes.text, classes.center)}>
-                <span className="ion-ios-flash-outline" />
-                <Title className={text.subtitle2} text={t('common:crypto-landing.morefeature_title3')} align="center" />
-                <Typography display="block" align="center" className={text.subtitle2}>
-                  {t('common:crypto-landing.morefeature_subtitle3')}
+          <Grid
+            container
+            direction={isMobile ? 'column-reverse' : 'row'}
+            spacing={6}
+            alignItems="center"
+          >
+            <Grid item md={6} xs={12}>
+              <ScrollAnimation
+                animateOnce
+                animateIn="fadeInRightShort"
+                offset={-100}
+                delay={300}
+                duration={0.3}
+              >
+                <figure className={classes.illustration}>
+                  <img src="/images/crypto/illustration2.png" alt="feature" />
+                </figure>
+              </ScrollAnimation>
+            </Grid>
+            <Grid item md={6} xs={12}>
+              <div className={clsx(classes.text, isMobile && classes.center)}>
+                <span className="ion-ios-analytics-outline" />
+                <Title text={t('common:crypto-landing.morefeature_title2')} align={isMobile ? 'center' : 'left'} />
+                <Typography className={text.subtitle2} display="block" align={isMobile ? 'center' : 'left'}>
+                  {t('common:crypto-landing.morefeature_subtitle2')}
                 </Typography>
               </div>
-              <Container maxWidth="md">
-                <ScrollAnimation
-                  animateOnce
-                  animateIn="fadeIn"
-                  offset={-100}
-                  duration={1}
-                  // afterAnimatedIn={handlePlay}
-                />
-              </Container>
+            </Grid>
+          </Grid>
+        </div>
+        <div className={classes.item}>
+          <Grid container spacing={6} alignItems="center">
+            <Grid item md={6} xs={12}>
+              <div className={clsx(classes.text, isMobile && classes.center)}>
+                <span className="ion-ios-lock-outline" />
+                <Title text={t('common:crypto-landing.morefeature_title4')} align={isMobile ? 'center' : 'left'} />
+                <Typography className={text.subtitle2} display="block" align={isMobile ? 'center' : 'left'}>
+                  {t('common:crypto-landing.morefeature_subtitle')}
+                </Typography>
+              </div>
+            </Grid>
+            <Grid item md={6} xs={12}>
+              <ScrollAnimation
+                animateOnce
+                animateIn="fadeInLeftShort"
+                delay={300}
+                duration={0.3}
+              >
+                <figure className={classes.illustration}>
+                  <img src="/images/crypto/illustration1.png" alt="feature" />
+                </figure>
+              </ScrollAnimation>
             </Grid>
           </Grid>
         </div>
