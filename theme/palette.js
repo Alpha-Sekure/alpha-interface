@@ -32,7 +32,7 @@ module.exports = {
       primary: {
         light: '#2c1e42',
         main: '#150929',
-        dark: '#1d1b21',
+        dark: '#5c339e',
         promote: '#072d66'
       },
       secondary: {

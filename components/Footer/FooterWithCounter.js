@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Footer from './Footer';
-import Counter from '../Counter';
+// import Counter from '../Counter';
 import useStyles from './footer-style';
 
 function FooterWithDeco(props) {
@@ -14,7 +14,7 @@ function FooterWithDeco(props) {
           <use xlinkHref="/images/crypto/deco-footer.svg#main" />
         </svg>
       </div>
-      <Counter />
+      {/* <Counter /> */}
       <Footer toggleDir={toggleDir} />
     </div>
   );
