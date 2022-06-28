@@ -162,9 +162,9 @@ function MainFeature(props) {
                 </Paper>
               </div>
             </div>
-            {/* <p>
-              Stats taken from AssureDefi survey
-            </p> */}
+            <p style={{ paddingLeft: '100px' }}>
+              ** Stats taken from AssureDefi survey **
+            </p>
           </Grid>
         </Grid>
       </Container>
