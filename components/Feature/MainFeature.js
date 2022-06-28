@@ -161,10 +161,10 @@ function MainFeature(props) {
                   </Typography>
                 </Paper>
               </div>
+              <p>
+                ** Stats taken from AssureDefi survey **
+              </p>
             </div>
-            <p style={{ paddingLeft: '100px' }}>
-              ** Stats taken from AssureDefi survey **
-            </p>
           </Grid>
         </Grid>
       </Container>
