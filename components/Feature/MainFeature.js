@@ -161,10 +161,10 @@ function MainFeature(props) {
                   </Typography>
                 </Paper>
               </div>
-              <p>
-                ** Stats taken from AssureDefi survey **
-              </p>
             </div>
+            <p>
+              ** Stats taken from AssureDefi survey **
+            </p>
           </Grid>
         </Grid>
       </Container>
