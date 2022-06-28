@@ -83,7 +83,7 @@ function MainFeature(props) {
         <DialogContent>
           {yt.use && (
             <YouTube
-              videoId="QPMkYyM2Gzg"
+              videoId="p2ibmS2pE_0"
               onReady={_onReady}
               opts={opts}
             />
@@ -99,7 +99,7 @@ function MainFeature(props) {
             </Typography>
             <Paper className={classes.video}>
               <figure>
-                <img src={imgAPI.crypto[4]} alt="cover" />
+                <img src={imgAPI.crypto[7]} alt="cover" />
               </figure>
               <IconButton className={classes.playBtn} onClick={handleClickOpen}>
                 <span className="ion-ios-play" />

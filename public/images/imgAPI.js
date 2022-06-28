@@ -35,7 +35,8 @@ const imgAPI = {
     '/images/crypto/hexa-green.png',
     'https://via.placeholder.com/600x341/cac142/FFFFFF',
     'https://via.placeholder.com/1280x677/204473/FFFFFF',
-    '/images/crypto/crypto_laptop.png'
+    '/images/crypto/crypto_laptop.png',
+    '/images/Alpha_Animated_Logo.gif'
   ],
   services: [
     '/images/services/Audit_Slide.png',

@@ -12,7 +12,7 @@ import Banner from '../components/Banner';
 import Promotion from '../components/Promotion';
 import Feature from '../components/Feature';
 // import Benefit from '../components/Benefit';
-import Testimonials from '../components/Testimonials';
+// import Testimonials from '../components/Testimonials';
 import Faq from '../components/Faq';
 import FooterWithCounter from '../components/Footer/FooterWithCounter';
 import PageNav from '../components/PageNav';
@@ -90,7 +90,7 @@ function Landing(props) {
             <Benefit />
           </section> */}
           <section id="testimonials" className={classes.spaceTop}>
-            <Testimonials />
+            {/* <Testimonials /> */}
           </section>
           <section id="faq" className={classes.spaceTop}>
             <Faq />

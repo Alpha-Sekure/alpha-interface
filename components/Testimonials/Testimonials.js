@@ -62,7 +62,7 @@ function Testimonials(props) {
     speed: 500,
     fade: true,
     autoplay: true,
-    autoplaySpeed: 7000,
+    autoplaySpeed: 2000,
     afterChange: (current) => setActive(current),
     beforeChange: (current, next) => setActiveTransition(next),
   };
@@ -90,13 +90,13 @@ function Testimonials(props) {
           <Grid item md={10} xs={12}>
             <div className={classes.sliderWrap}>
               <div className={classes.carousel}>
-                <button
+                {/* <button
                   type="button"
                   className={clsx(classes.nav, classes.prev)}
                   onClick={() => slider.current.slickPrev()}
                 >
                   <i className="ion-ios-arrow-back" />
-                </button>
+                </button> */}
                 <Carousel ref={slider} {...settings}>
                   {testiContent.map((item, index) => (
                     <div key={index.toString()} className={clsx(classes.item, slideState(index))}>
@@ -112,13 +112,13 @@ function Testimonials(props) {
                     </div>
                   ))}
                 </Carousel>
-                <button
+                {/* <button
                   type="button"
                   className={clsx(classes.nav, classes.next)}
                   onClick={() => slider.current.slickNext()}
                 >
                   <i className="ion-ios-arrow-forward" />
-                </button>
+                </button> */}
               </div>
               <div className={classes.pagination}>
                 <ul>
